@@ -6,7 +6,7 @@
         "mongo",
         "promise"
     ],
-    "version": "1.0.0",
+    "version": "1.0.2",
     "author": {
         "name": "Pablo Lagioia",
         "email": "pablo.lagioia@gmail.com"

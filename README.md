@@ -20,6 +20,14 @@ Most of Mongodb methods are mapped in the library:
 var MongoReaction = require("mongo-reaction");
 ```
 
+### Mappings
+
+To handle many connections in an easier way, you can map data base names to paths:
+
+```javascript
+MongoReaction.map("employees", "mongodb://127.0.0.1/employees");
+```
+
 ### Getting all documents in a collection
 ```javascript
 MongoReaction.db("employees").collection("employee").find().success(function(docs) {
