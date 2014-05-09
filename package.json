@@ -1,0 +1,23 @@
+{
+    "name": "mongo-reaction",
+    "description": "A library for mongodb that uses promises to handle responses",
+    "keywords": [
+        "mongodb",
+        "mongo",
+        "promise"
+    ],
+    "version": "1.0.0",
+    "author": {
+        "name": "Pablo Lagioia",
+        "email": "pablo.lagioia@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/mongodb/node-mongodb-native.git"
+    },
+    "dependencies": {
+        "bson": "0.2.7",
+        "kerberos": "0.0.3"
+    },
+    "main": "./index"
+}
