@@ -13,7 +13,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "http://github.com/mongodb/node-mongodb-native.git"
+        "url": "https://github.com/pabloLagioia/mongo-reaction"
     },
     "dependencies": {
         "bson": "0.2.7",
