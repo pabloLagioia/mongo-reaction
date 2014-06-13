@@ -87,7 +87,7 @@ MongoReaction.db("employees").collection("employee").findCursor({}).success(func
 
 ```
 
-### Getting a each document from collection by a query
+### Getting each document from collection by a query
 ```javascript
 MongoReaction.db("employees").collection("employee").findEach({}).success(function(docs) {
 
@@ -95,6 +95,25 @@ MongoReaction.db("employees").collection("employee").findEach({}).success(functi
         console.log("Here's the object");
         console.log(obj);
     });
+
+}).error(function(err) {
+    conosle.error("There was an error!");
+    conosle.error(err);
+});
+```
+
+### By pagination
+
+Parameters
+ * query
+ * page number
+ * number of documents
+
+```javascript
+MongoReaction.db("employees").collection("employee").findPage({}, 2, 5).success(function(docs) {
+
+    console.log("Here's the list of elements of the page");
+    console.log(doc);
 
 }).error(function(err) {
     conosle.error("There was an error!");
